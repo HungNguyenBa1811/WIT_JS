@@ -4,16 +4,24 @@ const btnDeleteArray = document.querySelectorAll('button.delete');
 btnAcceptedArray.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         // full box
-        console.log(e.target.parentElement.parentElement);
         e.target.parentElement.parentElement.insertAdjacentHTML(
             'afterend',
             `
-                <h1 class="font-semibold text-slate-600 text-lg text-center">Accepted!</h1>    
+                <h1 class="font-semibold text-green-600 text-lg text-center">Accepted!</h1>    
             `,
         );
-        e.target.parentElement.parentElement.children[0].remove();
-        e.target.parentElement.parentElement.children[0].remove();
-        e.target.parentElement.parentElement.children[0].remove();
+        // deletion
+        let parent = e.target.parentElement.parentElement.parentElement;
+        let content = Object.values(e.target.parentElement.parentElement.children);
+        console.log(content);
+        content.forEach(el => el.remove());
+        // faded
+        setTimeout(() => {
+            parent.style.opacity = 0;
+            setTimeout(() => {
+                parent.remove();
+            }, 500);
+        }, 1000)
     });
 });
 
@@ -24,11 +32,20 @@ btnDeleteArray.forEach((btn) => {
         e.target.parentElement.parentElement.insertAdjacentHTML(
             'afterend',
             `
-                <h1 class="font-semibold text-slate-600 text-lg text-center">Denied!</h1>    
+                <h1 class="font-semibold text-red-600 text-lg text-center">Denied!</h1>    
             `,
         );
-        e.target.parentElement.parentElement.children[0].remove();
-        e.target.parentElement.parentElement.children[0].remove();
-        e.target.parentElement.parentElement.children[0].remove();
+        // deletion
+        let parent = e.target.parentElement.parentElement.parentElement;
+        let content = Object.values(e.target.parentElement.parentElement.children);
+        console.log(content);
+        content.forEach((el) => el.remove());
+        // faded
+        setTimeout(() => {
+            parent.style.opacity = 0;
+            setTimeout(() => {
+                parent.remove();
+            }, 500);
+        }, 1000);
     });
 });
