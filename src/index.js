@@ -1,5 +1,14 @@
 const btnAcceptedArray = document.querySelectorAll('button.confirm');
 const btnDeleteArray = document.querySelectorAll('button.delete');
+const btnState = document.querySelector('button.toggle');
+let isExpand = false;
+
+if (btnState) { 
+    btnState.addEventListener('click', () => {
+        btnState.innerHTML = isExpand ? 'See All' : 'Collapse';
+        isExpand = !isExpand;
+    });
+}
 
 btnAcceptedArray.forEach((btn) => {
     btn.addEventListener('click', (e) => {
