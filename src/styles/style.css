@@ -6,3 +6,7 @@
 * {
     font-family: 'Segoe';
 }
+
+.svg-filter-green {
+    filter: invert(27%) sepia(91%) saturate(492%) hue-rotate(81deg) brightness(92%) contrast(88%);
+}
