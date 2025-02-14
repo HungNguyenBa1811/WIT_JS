@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Add friend</title>
+        <title>WIT2025</title>
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="./src/styles/style.css" />
     </head>
@@ -16,25 +16,29 @@
         </nav>
         <div id="modal" class="fixed flex w-screen h-screen -z-1 transition-all duration-500">
             <div id="panel" class="bg-white flex flex-col -translate-x-85 w-85 z-100 transition-all duration-500">
-                <div class="logo px-5 py-5">
-                    <img src="src/assets/images/logo.png" alt="logo" class="rounded-full w-1/3 " />
+                <div class="logo px-5 py-5 select-none">
+                    <img src="src/assets/images/logo.png" alt="logo" class="rounded-full w-1/3" />
                 </div>
                 <div class="content">
-                    <ul class="cursor-pointer">
-                        <li class="flex items-center px-5 py-3 font-semibold text-gray-500 bg-green-100 text-green-500">
-                            <img src="src/assets/images/home.svg" alt="" class="w-5 inline ml-2 mr-5 svg-filter-green">
+                    <ul class="cursor-pointer select-none">
+                        <li class="flex items-center px-5 py-4 font-semibold text-gray-500 bg-green-100 text-green-500">
+                            <img
+                                src="src/assets/images/home.svg"
+                                alt=""
+                                class="w-5 inline ml-2 mr-5 svg-filter-green"
+                            />
                             Trang chủ
                         </li>
-                        <li class="flex items-center px-5 py-3 font-semibold text-gray-500 hover:opacity-75 hover:contrast-5">
-                            <img src="src/assets/images/edu.svg" alt="" class="w-5 inline ml-2 mr-5">
+                        <li class="flex items-center px-5 py-4 font-semibold text-gray-500 hover:bg-gray-100">
+                            <img src="src/assets/images/edu.svg" alt="" class="w-5 inline ml-2 mr-5" />
                             Đào tạo
                         </li>
-                        <li class="flex items-center px-5 py-3 font-semibold text-gray-500 hover:opacity-75 hover:contrast-5">
-                            <img src="src/assets/images/calendar.svg" alt="" class="w-5 inline ml-2 mr-5">
+                        <li class="flex items-center px-5 py-4 font-semibold text-gray-500 hover:bg-gray-100">
+                            <img src="src/assets/images/calendar.svg" alt="" class="w-5 inline ml-2 mr-5" />
                             Hoạt động
                         </li>
-                        <li class="flex items-center px-5 py-3 font-semibold text-gray-500 hover:opacity-75 hover:contrast-5">
-                            <img src="src/assets/images/people.svg" alt="" class="w-5 inline ml-2 mr-5">
+                        <li class="flex items-center px-5 py-4 font-semibold text-gray-500 hover:bg-gray-100">
+                            <img src="src/assets/images/people.svg" alt="" class="w-5 inline ml-2 mr-5" />
                             Thành viên
                         </li>
                     </ul>
@@ -140,26 +144,59 @@
         </div>
         <div class="flex flex-col w-full items-center">
             <div class="w-250 flex flex-col rounded-lg">
-                <div class="showtext px-4 pt-4 pb-3 w-full flex flex-row justify-between cursor-pointer">
+                <div class="showtext px-4 pt-4 pb-3 w-full flex flex-row justify-between cursor-pointer select-none">
                     <div>1. Lich su hinh thanh CLB</div>
-                    <img src="src/assets/images/chevron-down.svg" alt="chevron-down" class="chevron transition-all duration-300 inline w-6 mr-3">
+                    <img
+                        src="src/assets/images/chevron-down.svg"
+                        alt="chevron-down"
+                        class="chevron transition-all duration-300 inline w-6 mr-3"
+                    />
                 </div>
                 <div class="text max-h-0 px-4 transition-all duration-500 overflow-hidden">
-                    <span class="text-justify"><strong class="uppercase">Lorem ipsum</strong> dolor sit amet consectetur, adipisicing elit. Minus, odio perferendis assumenda, cupiditate quod alias necessitatibus recusandae obcaecati excepturi velit quae corporis temporibus, commodi exercitationem. Laborum reiciendis libero consequuntur iure?</span>
+                    <span class="text-justify"
+                        ><strong class="uppercase">Lorem ipsum</strong> dolor sit amet consectetur, adipisicing elit.
+                        Minus, odio perferendis assumenda, cupiditate quod alias necessitatibus recusandae obcaecati
+                        excepturi velit quae corporis temporibus, commodi exercitationem. Laborum reiciendis libero
+                        consequuntur iure?</span
+                    >
                 </div>
             </div>
         </div>
         <div class="flex flex-col w-full items-center">
             <div class="w-250 flex flex-col rounded-lg">
-                <div class="showtext px-4 pt-4 pb-3 w-full flex flex-row justify-between cursor-pointer">
+                <div class="showtext px-4 pt-4 pb-3 w-full flex flex-row justify-between cursor-pointer select-none">
                     <div>2. Lich su hinh thanh WIT</div>
-                    <img src="src/assets/images/chevron-down.svg" alt="chevron-down" class="chevron transition-all duration-300 inline w-6 mr-3">
+                    <img
+                        src="src/assets/images/chevron-down.svg"
+                        alt="chevron-down"
+                        class="chevron transition-all duration-300 inline w-6 mr-3"
+                    />
                 </div>
                 <div class="text max-h-0 px-4 transition-all duration-500 overflow-hidden">
                     <ul class="list-disc list-inside">
-                        <li>LTA 1</li>
-                        <li>LTA 2</li>
-                        <li>LTA 3</li>
+                        <li>LTA Dummy 1</li>
+                        <li>LTA Dummy 2</li>
+                        <li>LTA Dummy 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col w-full items-center">
+            <div class="w-250 flex flex-col rounded-lg">
+                <div class="showtext px-4 pt-4 pb-3 w-full flex flex-row justify-between cursor-pointer select-none">
+                    <div>3. When you see it</div>
+                    <img
+                        src="src/assets/images/chevron-down.svg"
+                        alt="chevron-down"
+                        class="chevron transition-all duration-300 inline w-6 mr-3"
+                    />
+                </div>
+                <div class="text max-h-0 px-4 transition-all duration-500 overflow-hidden">
+                    <ul class="list-disc list-inside">
+                        <li>Cookiezi's Blue Zenith HR 727pp</li>
+                        <li>Cookiezi's Blue Zenith HDHR 727pp</li>
+                        <li>Aireu's Guess Who Is Back DT 727pp</li>
+                        <li>WYSI WYFSI 727! 727! wyfsi... wyfsi... wysi wySI</li>
                     </ul>
                 </div>
             </div>
