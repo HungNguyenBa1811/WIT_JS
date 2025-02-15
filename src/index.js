@@ -45,11 +45,11 @@ dropdown.forEach((dropdown1) => {
         if (content.classList.contains('max-h-30')) {
             removeStyle(dropdown1.parentElement, 'z-1 shadow-xl');
             removeStyle(content, 'max-h-30 pt-2 pb-4');
-            addStyle(chevron, 'max-h-0 rotate-180');
+            removeStyle(chevron, 'rotate-180');
         } else {
             addStyle(dropdown1.parentElement, 'z-1 shadow-xl');
             addStyle(content, 'max-h-30 pt-2 pb-4');
-            removeStyle(chevron, 'max-h-0 rotate-180');
+            addStyle(chevron, 'rotate-180');
         }
     };
 });
