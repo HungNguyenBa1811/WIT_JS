@@ -6,6 +6,7 @@ const modal = document.getElementById('modal');
 const panel = document.getElementById('panel');
 const dropdown = document.querySelectorAll('.showtext');
 let isExpand = false;
+let opened = -1;
 
 const addStyle = (el, str) => {
     str.split(' ').forEach((style) => el.classList.add(style));
@@ -38,7 +39,7 @@ modal.onclick = (e) => {
     }
 };
 
-dropdown.forEach((dropdown1) => {
+dropdown.forEach((dropdown1, index) => {
     dropdown1.onclick = () => {
         const content = dropdown1.parentElement.children[1];
         const chevron = dropdown1.children[1];
@@ -50,6 +51,17 @@ dropdown.forEach((dropdown1) => {
             addStyle(dropdown1.parentElement, 'z-1 shadow-xl');
             addStyle(content, 'max-h-30 pt-2 pb-4');
             addStyle(chevron, 'rotate-180');
+        }
+
+        // logic
+        if (opened === -1) {
+            opened = index
+        } else if (opened === index) {
+            opened = -1
+        } else {
+            let previousBar = dropdown[opened];
+            previousBar.click();
+            opened = index;
         }
     };
 });
