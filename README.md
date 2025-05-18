@@ -1,2 +1,2 @@
-# WIT_JS
+# WIT PROJECT (VANILLA JS)
 witdehel js react
