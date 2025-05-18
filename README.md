@@ -1,2 +1,2 @@
 # WIT_JS
-witdehel js react reactnative
+witdehel js react
